@@ -13,9 +13,9 @@ function Payment() {
   const history = useHistory();
 
   const [disabled, setDisabled] = useState(true);
-  const [error, setError] = useState(null);
   const [succeeded, setSucceeded] = useState(false);
   const [processing, setProcessing] = useState(false);
+  const [error, setError] = useState(null);
 
   const [clientSecret, setClientSecret] = useState();
 

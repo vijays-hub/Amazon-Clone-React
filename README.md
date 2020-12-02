@@ -2,7 +2,7 @@
 
 A simple project created using ReactJS that demonstrates key features of amazon. This Project contains complete E-Commerce functionality.
 
-[Website:](https://vijaytrialproject.web.app/)
+[Live Demo](https://vijaytrialproject.web.app/)
 
 ### Technologies
 

@@ -1,0 +1,74 @@
+.footer__options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #232f3e;
+  padding: 50px 0px;
+}
+
+.footer__signIn {
+  background-color: white;
+  text-align: center;
+  height: 130px;
+  margin-top: 20px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.footer__signIn div {
+  border: 1px solid lightgray;
+  padding: 30px 0px;
+  border-radius: 2px;
+}
+
+.footer__signIn > div p {
+  font-size: 13px;
+  font-weight: 400;
+  color: #111;
+}
+
+.footer__signIn > div button {
+  font-size: 12px;
+  background: #ffc940;
+  border-radius: 5px;
+  width: 230px;
+  height: 30px;
+  border: 1px solid;
+  margin-top: 10px;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+  font-weight: bolder;
+}
+
+.footer__signIn > div span {
+  font-size: 12px;
+}
+
+.footer__topButton {
+  background-color: #485769;
+  text-align: center;
+  padding: 15px;
+  color: #ffffff;
+}
+
+.footer__topButton:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.footer__options p {
+  color: #ffffff;
+  opacity: 0.85;
+  font-size: 14px;
+  margin: 5px 0px;
+}
+
+.footer__options p:hover {
+  cursor: pointer;
+  text-decoration: underline #ffffff;
+}
+
+.footer__options h4 {
+  color: #ffffff;
+  margin: 12px 0px;
+}

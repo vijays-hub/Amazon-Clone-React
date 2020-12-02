@@ -1,0 +1,17 @@
+.orders {
+  padding: 20px 80px;
+}
+
+.orders > h1 {
+  margin: 30px;
+}
+
+.orders__title {
+  padding: 20px 40px;
+}
+
+@media (max-width: 425px) {
+  .orders {
+    padding: 20px 20px;
+  }
+}

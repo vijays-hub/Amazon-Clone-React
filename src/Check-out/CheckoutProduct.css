@@ -1,6 +1,7 @@
 .checkoutProduct {
   display: flex;
   margin-top: 20px;
+  padding-top: 20px;
   margin-bottom: 20px;
   flex-wrap: wrap;
 }
@@ -16,8 +17,11 @@
 }
 
 .checkoutProduct__info > button {
-  background: #f0c14b;
+  background: #ffc940;
+  width: 150px;
+  height: 30px;
   border: 1px solid;
+  border-radius: 5px;
   margin-top: 10px;
   border-color: #a88734 #9c7e31 #846a29;
   color: #111;
@@ -39,4 +43,15 @@
     flex-wrap: wrap;
     margin-bottom: 50px;
   }
+}
+
+button:focus {
+  outline: none !important;
+  border: 3px solid darkgoldenrod;
+}
+
+.checkoutProduct:hover {
+  transform: scale(1.01, 1.01);
+  box-shadow: 0 0 20px 2px grey;
+  padding-bottom: 20px;
 }

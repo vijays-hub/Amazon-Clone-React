@@ -38,24 +38,27 @@ function Header() {
             <span className="header__optionTwo">{user ? 'Sign Out' : 'Sign In'}</span>
           </div>
         </Link>
+        <Link to='/orders'>
+          <div className="header__option">
+            <span className="header__optionLineOne">Retuns</span>
+            <span className="header__optionTwo">&Orders</span>
+          </div>
+        </Link>
         <div className="header__option">
-          <span className="header__optionLineOne">Retuns</span>
-          <span className="header__optionTwo">&Orders</span>
-        </div>
-        <div className="header__option">
-          <span className="header__optionLineOne">Your</span>
+          <span className="header__optionLineOne">Try</span>
           <span className="header__optionTwo">Prime</span>
         </div>
         <Link to="/checkout">
           <div className="header__optionBasket">
-            <ShoppingCartIcon />
-            <span className="header__optionLineTwo header__basketCount">
+            <span className="header__optionLineTwo header__basketCount" style={{ color: '#f0c14b' }}>
               {/* {basket.length} */}
               {/* Optional Chaining [using ' ? '] to avoid any error if undefined */}
               {basket?.length}
             </span>
+            <ShoppingCartIcon />
           </div>
         </Link>
+        <p style={{ color: 'white', marginTop: '15px', fontSize: '16px', paddingRight: '10px' }}> <sub>Cart</sub> </p>
       </div>
     </div>
   );

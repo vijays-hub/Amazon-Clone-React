@@ -12,6 +12,8 @@ import Payment from "./Payment/Payment";
 
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
+import Orders from "./Orders/Orders";
+import Footer from "./Footer/Footer";
 
 const promise = loadStripe(
   "pk_test_51HqZPuJYklAWW39crWO9KvR2qvgK0BGKtEGsy4wrShjM0d60xIUa3JLmpxzzqMgYzD0QoSc1GDHFOW0mGgm928eT00EhArNglr"
@@ -21,6 +23,9 @@ function App() {
   const [{ basket }, dispatch] = useStateValue();
   console.log("Basket -->", basket);
   useEffect(() => {
+    // Scroll to top page 
+    window.scrollTo(0, 0)
+
     auth.onAuthStateChanged((user) => {
       if (user) {
         // User is [was] logged in!
@@ -37,12 +42,16 @@ function App() {
         });
       }
     });
-  }, []);
+  }, [dispatch]);
 
   return (
     <Router>
       <div className="App">
         <Switch>
+          <Route path="/orders">
+            <Header></Header>
+            <Orders></Orders>
+          </Route>
           <Route path="/payment">
             <Header></Header>
             <Elements stripe={promise}>
@@ -59,6 +68,7 @@ function App() {
           <Route path="/">
             <Header></Header>
             <Home />
+            <Footer></Footer>
           </Route>
         </Switch>
       </div>

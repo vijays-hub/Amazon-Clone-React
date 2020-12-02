@@ -19,6 +19,7 @@
 @media (max-width: 720px) {
   .checkout {
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .checkout__ad {
@@ -26,5 +27,10 @@
     width: 100%;
     object-fit: contain;
     height: 50px;
+  }
+
+  .checkout__emptyCart {
+    margin-top: 50px;
+    text-align: center;
   }
 }

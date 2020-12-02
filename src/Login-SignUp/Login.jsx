@@ -16,7 +16,6 @@ function Login() {
       .signInWithEmailAndPassword(email, password)
       .then((user) => {
         if (user) {
-          alert("Signed In");
           history.push("/");
         }
       })

@@ -1,0 +1,33 @@
+.loader__container {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.loader__container img {
+  width: 30px;
+  height: 30px;
+}
+
+.loader__container span {
+  color: darkgoldenrod;
+  animation: change_color 1.5s infinite;
+}
+
+@keyframes change_color {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 400px) {
+  .loader__container img {
+    margin-right: 50px;
+  }
+}

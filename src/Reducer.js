@@ -5,8 +5,11 @@ export const initialState = {
 
 // Selectors [Standard Practice to have it for calculations!]
 // refer Array.prototype.reduce()
-export const getBasketTotal = (basket) =>
-  basket?.reduce((amount, item) => item.price + amount, 0);
+export const getBasketTotal = (basket) => {
+  let total = basket?.reduce((amount, item) => item.price + amount, 0);
+  return total.toFixed(2)
+}
+
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -43,6 +46,11 @@ const reducer = (state, action) => {
         user: action.user
       }
 
+    case "EMPTY_BASKET":
+      return {
+        ...state,
+        basket: []
+      }
 
     default:
       return state;

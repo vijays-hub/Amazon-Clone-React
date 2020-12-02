@@ -22,19 +22,18 @@ A simple project created using ReactJS that demonstrates key features of amazon.
 
 ### Setup
 
-1. Clone this repo using : **git clone https://github.com/vijays-hub/Amazon-Clone-React.git**
-
+1. Clone this repository to your local system.
 2. cd into the project folder
 3. npm install
 
 #### Launch
 
-1. npm start
+npm start
 
 #### Production build
 
-1. npm run build
+npm run build
 
-##### NOTE
+### **NOTE**:
 
-Use the card number **4242 4242 4242 4242** for the payments. Its a Test Card accepted by Stripe.
+Use the card number **4242 4242 4242 4242** for the payments. Its a Test Card accepted by **Stripe**.
